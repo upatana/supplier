@@ -1,0 +1,15 @@
+ID: mta2
+_schema-version: '2.1'
+description: Demo MTA 2
+version: 0.0.1
+
+modules:
+ - name: mta2java
+   type: java
+   path: mta2java
+   parameters:
+      memory: 512M
+   provides:
+    - name: mta2java_api
+      properties:
+         url: ${default-url}
